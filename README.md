@@ -29,6 +29,7 @@ TRANSFORM:
 *
 
 LOAD: 
+
 1)Stream:
 * Then we connected to the engine
 * Then we used the clean date to an sql datebase
