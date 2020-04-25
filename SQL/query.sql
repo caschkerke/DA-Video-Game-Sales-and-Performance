@@ -1,25 +1,24 @@
 select current_players.appid, 
        current_players.current_players, 
-       steam_data.appid, 
-       steam_data.release_date, 
-       steam_data.name, 
-       steam_data.postive_ratings, 
-       steam_data.negative_ratings, 
-       steam_data.average_playtime, 
-       steam_data.median_playtime, 
-       steam_data.owners, 
-       steam_data.price
+       steam_data1.appid, 
+       steam_data1.release_date, 
+       steam_data1.name, 
+       steam_data1.positive_ratings, 
+       steam_data1.negative_ratings, 
+       steam_data1.average_playtime, 
+       steam_data1.median_playtime, 
+       steam_data1.owners, 
+       steam_data1.price,
+       vg_data.name,
+       vg_data.global_sales
 
-from current_players
-    
-    inner join steam_data 
-    
-        on current_players.appid = steam_data.appid;
+from steam_data1
+    inner join current_players
+        on current_players.appid = steam_data1.appid
 
-SELECT premise.id, premise.premise_name, county.county_name
-FROM premise
-INNER JOIN county
-ON premise.county_id = county.county_id;
+    inner join vg_data
+        on vg_data.name = steam_data1.name
+            order by steam_data1.appid;
 
 -- Joins tables
 -- SELECT current_players.appid, current_players.current_players, desired_database_here.desired_column_here, desired_database_here.desired_column_here

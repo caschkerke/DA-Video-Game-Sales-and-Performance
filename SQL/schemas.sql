@@ -1,5 +1,7 @@
 -- Drop existing tables if applicable
--- DROP TABLE current_players;
+DROP TABLE IF EXISTS current_players;
+DROP TABLE IF EXISTS vg_data;
+DROP TABLE IF EXISTS steam_data1;
 
 -- Create tables for raw data to be loaded into
 CREATE TABLE current_players (
@@ -7,8 +9,25 @@ CREATE TABLE current_players (
 			current_players INT
 );
 
--- Joins tables
--- SELECT current_players.appid, current_players.current_players, desired_database_here.desired_column_here, desired_database_here.desired_column_here
--- FROM current_players
--- JOIN "desired_database_here"
--- ON current_players.appid = desired_database_here.desired_column_here;
+CREATE TABLE vg_data (
+			rank INT PRIMARY KEY,
+			name VARCHAR,
+			platform VARCHAR,
+			year INT,
+			genre VARCHAR,
+			publisher VARCHAR,
+			global_sales DEC
+);
+
+CREATE TABLE steam_data1 (
+	appid INT PRIMARY KEY,
+	name Varchar,
+	release_date date,
+	publisher Varchar,
+	genres  Varchar,
+	positive_ratings Int,
+	negative_ratings Int,
+	average_playtime Int,
+	median_playtime Int,
+	owners Varchar,
+	price Int);
