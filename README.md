@@ -16,7 +16,7 @@ EXTRACT: First the following 2 data sources are loaded and 1 Api data
 TRANSFORM:
 
 1)Stream:
-* I used the loc function to get pick out the specific headers that 
+* We used the loc function to get pick out the specific headers that 
 * Small data cleanup within the region_name column
 * Drop any rows that have data missing (NaN values) >> Clean_df
 
@@ -30,9 +30,10 @@ TRANSFORM:
 
 LOAD: 
 1)Stream:
-* Then I connected to the engine
-* Then I used the clean date to an sql datebase
-* Last I excute the engine
+* Then we connected to the engine
+* Then we used the clean date to an sql datebase
+* Last we excute the engine
+
 2)Video Game Sales:
 *
 *
