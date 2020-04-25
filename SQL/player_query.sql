@@ -19,9 +19,3 @@ from steam_data
     inner join vg_data
         on vg_data.name = steam_data.name
             order by steam_data.appid;
-
--- Joins tables
--- SELECT current_players.appid, current_players.current_players, desired_database_here.desired_column_here, desired_database_here.desired_column_here
--- FROM current_players
--- JOIN "desired_database_here"
--- ON current_players.appid = desired_database_here.desired_column_here;
