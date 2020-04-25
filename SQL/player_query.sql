@@ -11,9 +11,22 @@ select current_players.appid,
        steam_data.price
 
 from current_players
+<<<<<<< Updated upstream
     inner join steam_data 
         on current_players.appid = steam_data.appid;
 
+=======
+    
+    inner join steam_data 
+    
+        on current_players.appid = steam_data.appid;
+
+SELECT premise.id, premise.premise_name, county.county_name
+FROM premise
+INNER JOIN county
+ON premise.county_id = county.county_id;
+
+>>>>>>> Stashed changes
 -- Joins tables
 -- SELECT current_players.appid, current_players.current_players, desired_database_here.desired_column_here, desired_database_here.desired_column_here
 -- FROM current_players
