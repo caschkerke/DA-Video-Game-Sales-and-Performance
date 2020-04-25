@@ -5,7 +5,7 @@ Project was completed by Nathanuel Martin, Benjamin Pitman, and Cade Schkerke.
 
 Our goal with this project was to create a relational database for general Video Game stats and Steam specific game stats. We used existing sales data for global video game releases, steam releases, and compared them along with current (Steam) player count when applicable. 
 
-EXTRACT: First the following 2 data sources are loaded and 1 Api data
+EXTRACT: First the following 2 data sources are loaded and 1 API data
 <ul>
   <li>vgsales.csv - Source: <a href="https://www.kaggle.com/gregorut/videogamesales">Kaggle</a></li>
   <li>steam.csv - Source: <a href="https://www.kaggle.com/nikdavis/steam-store-games">Kaggle</a></li>
