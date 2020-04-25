@@ -1,3 +1,6 @@
+-- This is an example query for a steam game that includes an active player count. Make sure to run the request code in 
+-- api_data_pull.ipynb before this query for the most accurate and updated active player count return.
+
 select current_players.appid, 
        current_players.current_players, 
        steam_data1.appid, 
