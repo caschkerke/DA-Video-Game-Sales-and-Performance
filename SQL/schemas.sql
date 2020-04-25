@@ -1,3 +1,6 @@
+-- !! This file MUST be run in pgAdmin4 before the notebook code will execute properly. This should be executed via the query
+-- tool in a database named playercount_db.
+
 -- Drop existing tables if applicable
 DROP TABLE IF EXISTS current_players;
 DROP TABLE IF EXISTS vg_data;
