@@ -21,7 +21,7 @@ TRANSFORM:
 * Drop any rows that have data missing (NaN values) >> Clean_df
 
 2)Video Game Sales:
-* 
+* Dropped unnecessary columns in excel >> vgsales_clean.csv
 * Imported new vgsales_clean.csv into notebook
 * Replaced any empty "Year" values in the data set with fillna and set proper data types
 * Renamed columns to be SQL-friendly >> vg_rename
